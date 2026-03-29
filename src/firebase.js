@@ -6,10 +6,10 @@ import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD5X1MqxEdVkjgarzKPJpglZBJx3OEd_Co",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "ucantdothis.firebaseapp.com",
   databaseURL: "https://ucantdothis-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "ucantdothis",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: "ucantdothis.firebasestorage.app",
   messagingSenderId: "682723055694",
   appId: "1:682723055694:web:99e75de52a7dce2d15cb1f"
